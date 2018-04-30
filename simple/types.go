@@ -1,7 +1,7 @@
 package simple
 
 import (
-	. "../ctx"
+	. "nachos/ctx"
 )
 
 /**

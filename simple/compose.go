@@ -1,9 +1,9 @@
 package simple
 
 import (
-	. "../ctx"
-	. "../mid"
 	"errors"
+	. "nachos/ctx"
+	. "nachos/mid"
 	"strings"
 )
 

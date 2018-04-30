@@ -1,8 +1,8 @@
 package fast
 
 import (
-	. "../http"
-	. "../store"
+	. "nachos/http"
+	. "nachos/store"
 )
 
 const AUTH_ERROR_CODE = 50

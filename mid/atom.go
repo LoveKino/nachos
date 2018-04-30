@@ -1,7 +1,7 @@
 package mid
 
 import (
-	. "../ctx"
+	. "nachos/ctx"
 )
 
 // provide basic concepts about mid

@@ -1,11 +1,11 @@
 package fast
 
 import (
-	. "../ctx"
-	. "../http"
-	. "../simple"
-	. "../store"
 	"log"
+	. "nachos/ctx"
+	. "nachos/http"
+	. "nachos/simple"
+	. "nachos/store"
 	"net/http"
 	"strings"
 )
