@@ -1,10 +1,10 @@
 package mid
 
 import (
+	. "../ctx"
+	. "../http"
+	"../session"
 	"errors"
-	. "nachos/ctx"
-	. "nachos/http"
-	"nachos/session"
 	"strings"
 )
 

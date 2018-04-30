@@ -1,12 +1,12 @@
 package mid
 
 import (
+	. "../ctx"
+	. "../http"
+	"../session"
+	"../util"
 	"errors"
 	"github.com/satori/go.uuid"
-	. "nachos/ctx"
-	. "nachos/http"
-	"nachos/session"
-	"nachos/util"
 	"strconv"
 	"strings"
 )

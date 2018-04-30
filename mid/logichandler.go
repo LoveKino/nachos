@@ -1,10 +1,10 @@
 package mid
 
 import (
+	. "../ctx"
 	"../util"
 	"errors"
 	"log"
-	. "nachos/ctx"
 	"reflect"
 	"strings"
 )
