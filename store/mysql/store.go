@@ -1,8 +1,8 @@
 package mysql
 
 import (
-	. "../"
 	"database/sql"
+	. "github.com/LoveKino/nachos/store"
 	_ "github.com/go-sql-driver/mysql"
 	"log"
 )

@@ -1,7 +1,7 @@
 package nachos
 
 import (
-	"../util"
+	"github.com/LoveKino/nachos/util"
 	"testing"
 )
 

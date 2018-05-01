@@ -1,10 +1,10 @@
 package mid
 
 import (
-	. "../ctx"
-	. "../http"
-	"../session"
 	"errors"
+	. "github.com/LoveKino/nachos/ctx"
+	. "github.com/LoveKino/nachos/http"
+	"github.com/LoveKino/nachos/session"
 	"strings"
 )
 

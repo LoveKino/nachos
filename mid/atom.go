@@ -1,7 +1,7 @@
 package mid
 
 import (
-	. "../ctx"
+	. "github.com/LoveKino/nachos/ctx"
 )
 
 // provide basic concepts about mid

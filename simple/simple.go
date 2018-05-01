@@ -1,8 +1,8 @@
 package simple
 
 import (
-	. "../ctx"
-	. "../mid"
+	. "github.com/LoveKino/nachos/ctx"
+	. "github.com/LoveKino/nachos/mid"
 )
 
 // TODO name mapping for row maps

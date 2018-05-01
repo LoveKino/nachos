@@ -1,10 +1,10 @@
 package fast
 
 import (
-	. "../ctx"
-	. "../http"
-	. "../simple"
-	. "../store"
+	. "github.com/LoveKino/nachos/ctx"
+	. "github.com/LoveKino/nachos/http"
+	. "github.com/LoveKino/nachos/simple"
+	. "github.com/LoveKino/nachos/store"
 	"log"
 	"net/http"
 	"strings"

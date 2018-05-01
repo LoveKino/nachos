@@ -1,8 +1,8 @@
 package ctx
 
 import (
-	. "../http"
-	. "../store"
+	. "github.com/LoveKino/nachos/http"
+	. "github.com/LoveKino/nachos/store"
 	"net/http"
 )
 

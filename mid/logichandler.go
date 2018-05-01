@@ -1,9 +1,9 @@
 package mid
 
 import (
-	. "../ctx"
-	"../util"
 	"errors"
+	. "github.com/LoveKino/nachos/ctx"
+	"github.com/LoveKino/nachos/util"
 	"log"
 	"reflect"
 	"strings"

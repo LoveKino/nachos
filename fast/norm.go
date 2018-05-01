@@ -1,8 +1,8 @@
 package fast
 
 import (
-	. "../http"
-	. "../store"
+	. "github.com/LoveKino/nachos/http"
+	. "github.com/LoveKino/nachos/store"
 )
 
 const AUTH_ERROR_CODE = 50

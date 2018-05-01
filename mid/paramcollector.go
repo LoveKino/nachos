@@ -1,11 +1,11 @@
 package mid
 
 import (
-	. "../ctx"
-	. "../http"
-	"../session"
-	"../util"
 	"errors"
+	. "github.com/LoveKino/nachos/ctx"
+	. "github.com/LoveKino/nachos/http"
+	"github.com/LoveKino/nachos/session"
+	"github.com/LoveKino/nachos/util"
 	"github.com/satori/go.uuid"
 	"strconv"
 	"strings"

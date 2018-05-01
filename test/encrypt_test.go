@@ -1,7 +1,7 @@
 package nachos
 
 import (
-	"../session"
+	"github.com/LoveKino/nachos/session"
 	"testing"
 )
 
