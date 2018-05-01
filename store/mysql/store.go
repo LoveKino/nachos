@@ -38,10 +38,10 @@ func exec(db *sql.DB, sqlText string) ExecStoreType {
 	}
 }
 
-func GetStoreConstructor(dbUserName string, dbPassword string, dbName string) (StoreConstructor, error) {
+func GetStoreConstructor(dsn string) (StoreConstructor, error) {
 	var storeConstructor StoreConstructor
 
-	db, err := sql.Open("mysql", dbUserName+":"+dbPassword+"@/"+dbName)
+	db, err := sql.Open("mysql", dsn)
 	if err != nil {
 		return storeConstructor, nil
 	}
