@@ -1,6 +1,6 @@
 package store
 
-type Records = []interface{}
+type Records []interface{}
 
 type QueryStoreType func(params ...interface{}) (Records, error)
 type ExecStoreType func(params ...interface{}) (interface{}, error)
