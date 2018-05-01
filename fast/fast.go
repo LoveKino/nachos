@@ -41,17 +41,22 @@ var LoginCheck = SimpleAtomMid("session:sid", func(ctx *ApiContext, params []int
 }, "setMidMap:userId")
 
 func CommonHttpModule(moduleConfig CommonModuleConfig) CommonApiUtil {
-	quickApi := func(options ApiOptions, params ...interface{}) ApiHandler {
-		store := GetStore(moduleConfig.StoreCons, options.QueryMap, options.ExecMap)
-		return ToHttpHandler(store, ApiConfig{
-			"SessionKey": moduleConfig.SessionKey,
-		}, SeqAtomMids(params...))
+	quickApi := func(options ApiOptions) ParamsHandler {
+		return func(params ...interface{}) ApiHandler {
+			store := GetStore(moduleConfig.StoreCons, options.QueryMap, options.ExecMap)
+			return ToHttpHandler(store, ApiConfig{
+				"SessionKey": moduleConfig.SessionKey,
+			}, SeqAtomMids(params...))
+		}
 	}
 
-	quickLoginedApi := func(options ApiOptions, params ...interface{}) ApiHandler {
-		// append login check
-		nextParams := append([]interface{}{LoginCheck}, params...)
-		return quickApi(options, nextParams...)
+	quickLoginedApi := func(options ApiOptions) ParamsHandler {
+		qApi := quickApi(options)
+		return func(params ...interface{}) ApiHandler {
+			// append login check
+			nextParams := append([]interface{}{LoginCheck}, params...)
+			return qApi(nextParams...)
+		}
 	}
 
 	apiUtil := CommonApiUtil{

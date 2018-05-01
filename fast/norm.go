@@ -19,7 +19,9 @@ type ApiOptions struct {
 	ExecMap  map[string]string
 }
 
+type ParamsHandler func(params ...interface{}) ApiHandler
+
 type CommonApiUtil struct {
-	QuickApi        func(options ApiOptions, params ...interface{}) ApiHandler
-	QuickLoginedApi func(options ApiOptions, params ...interface{}) ApiHandler
+	QuickApi        func(options ApiOptions) ParamsHandler
+	QuickLoginedApi func(options ApiOptions) ParamsHandler
 }
